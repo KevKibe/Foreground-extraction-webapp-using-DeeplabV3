@@ -1,7 +1,7 @@
 
 
 import streamlit as st
-def main():
+
     # Streamlit app
 
 from PIL import Image
@@ -125,6 +125,5 @@ if uploaded_file is not None:
     download_button_str = f"Download Extracted Foreground"
     st.download_button(download_button_str, download_buffer.getvalue(), file_name='extracted_foreground.png')
     
-if __name__ == "__main__":
-    main()    
+
 
