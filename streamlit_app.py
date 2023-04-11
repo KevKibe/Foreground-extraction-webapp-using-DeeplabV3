@@ -1,8 +1,8 @@
 
 
 import streamlit as st
-
-# Streamlit app
+def main():
+    # Streamlit app
 
 from PIL import Image
 
@@ -123,4 +123,8 @@ if uploaded_file is not None:
     download_buffer = io.BytesIO()
     extracted_foreground.save(download_buffer, format='PNG')  # Change format to PNG
     download_button_str = f"Download Extracted Foreground"
-    st.download_button(download_button_str, download_buffer.getvalue(), file_name='extracted_foreground.png')  # Change file extension to .png
+    st.download_button(download_button_str, download_buffer.getvalue(), file_name='extracted_foreground.png')
+    
+if __name__ == "__main__":
+    main()    
+
