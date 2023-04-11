@@ -5,8 +5,9 @@ import streamlit as st
 # Streamlit app
 
 from PIL import Image
-from torchvision import transforms
+
 import torch
+from torchvision import transforms
 from torch.nn import functional as F
 import numpy as np
 import warnings
